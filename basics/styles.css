@@ -106,7 +106,8 @@ footer {
 }
 
 .box {
-  background-color: #e6eef6;
+  /* background-color: #e6eef6; */
+  background-color: whitesmoke;
   padding: 20px;
   margin-top: 5vh;
   margin-bottom: 20px;
