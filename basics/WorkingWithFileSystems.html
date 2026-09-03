@@ -206,8 +206,97 @@ file-1!@.html
 
 	</section>
 
+	<!-- What Are Best Practices for File/Folder Organization in Web Applications? ما هي أفضل الممارسات لتنظيم الملفات والمجلدات في تطبيقات الويب؟ -->
 	<section id="3">
 		<h3>ت. ما هي أفضل الممارسات لتنظيم الملفات والمجلدات في تطبيقات الويب؟</h3>
+		<p>
+			عند بناء "تطبيقات الويب" (Web applications) ، من المهم التفكير في كيفية "تنظيم الملفات والمجلدات" (the organization of your files and folders) ; فهذا يساعد في الحفاظ على تنظيم الكود البرمجي وتسهيل "صيانته" (maintain) .
+		</p>
+
+		<p class="hinty">
+			لنلقِ نظرةً على مثال لـ"هيكلية المجلدات" (folder structure) الخاصة بمشروع HTML و CSS :
+		</p>
+		<div class="code-block"><pre><code>
+.
+├── /assets
+│   ├── /images
+│   │   ├── logo.png
+│   │   ├── banner.jpg
+│   │   └── icons.svg
+│   ├── /fonts
+│   │   ├── custom-font.woff
+│   │   └── custom-font.woff2
+├── /css
+│   ├── main.css
+│   ├── about.css
+│   └── contact.css
+├── index.html
+├── about.html
+├── contact.html
+└── README.md
+        </code></pre></div>
+		<p>
+			توجد نقطة واحدة في أعلى المثال، وهي تمثل "الدليل الجذري" (The root directory) .
+		</p>
+		<p>
+			الدليل الجذري (Root directory) هو "الدليل الأعلى مستوى" (The top-level directory) في "نظام الملفات" (file system) ، ويُعد نقطة الانطلاق لـ"جميع مسارات الملفات" (all file paths) ، كما أنه يحتوي على كافة "الأدلة" (directories) و"الملفات" (files) الأخرى. ويُعد "الدليل" (directory) مسمىً آخر للمصطلح "مجلد" (folder).
+		</p>
+		<p>
+			داخل "الدليل الجذري" (The root directory) ، يكون الدليل الأول الظاهر هو دليل "الأصول" <code dir="ltr" class="br-spec">assets</code> . ويشير مصطلح "الأصول" <code dir="ltr" class="br-spec">assets</code> إلى أي ملفات تُستخدم في المشروع، مثل "الصور" (images) أو "الخطوط" (fonts) أو غيرها من "الموارد" (resources) .
+		</p>
+		<p>
+			في هذا المثال، يوجد "دليلان" (two directories) داخل "دليل الأصول" <span dir="ltr" class="nw">(the <code dir="ltr" class="br-spec">assets</code> directory)</span> يحملان الاسمين <code dir="ltr" class="br-spec">images</code> و <code dir="ltr" class="br-spec">fonts</code> .
+		</p>
+		<p>
+			الدليل التالي هو <span dir="ltr" class="nw">(The <code dir="ltr" class="br-spec">css</code> directory)</span> ، ويُشار إليه أحياناً أيضاً باسم مجلد "أوراق الأنماط" (stylesheets) ; وهنا ستقوم بتخزين جميع ملفات CSS الخاصة بك.
+		</p>
+		<p>
+			توجد ملفات HTML أسفل <span dir="ltr" class="nw">(The <code dir="ltr" class="br-spec">css</code> directory)</span> ؛ حيث يمثل الملف <code dir="ltr" class="br-spec">index.html</code> "الصفحة الرئيسية" (The homepage) ، بينما يمثل الملفان <code dir="ltr" class="br-spec">about.html</code> و <code dir="ltr" class="br-spec">contact.html</code> صفحتي "نبذة عنا" و"اتصل بنا" على التوالي.
+		</p>
+		<p>
+			وأخيراً، يوجد ملف <code dir="ltr" class="br-spec">README.md</code> . تُستخدم ملفات README عادةً لتقديم معلومات مفيدة حول المشروع، مثل وظيفته وكيفية استخدامه وأي تفاصيل أخرى ذات صلة.
+		</p>
+		<p>
+			يرمز الامتداد <code dir="ltr" class="br-spec">.md</code> إلى Markdown , وهي لغة ترميز خفيفة الوزن تُستخدم غالباً لكتابة الوثائق.
+		</p>
+		<p>
+			يؤدي تنظيم مشروعك في ملفات للموارد (assets) وملفات "CSS و HTML" إلى تسهيل العثور على ما تبحث عنه، كما يسهّل على المطورين الآخرين المساهمة في مشروعك.
+		</p>
+		<p>
+			من المهم ملاحظة أن هذا مجرد مثال واحد على كيفية تنظيم ملفاتك ومجلداتك; فهناك طرق عديدة ومختلفة لهيكلة المشروع.
+		</p>
+
+		<!-- QUESTIONS -->
+		<div class="questions">
+			<h4>أسئلة :</h4>
+				
+
+            <h5>ما هو الغرض من استخدام "مجلد الأصول" (assets directory) في تطبيقات الويب؟</h5>
+			
+			<p> ١. يُستخدم لتخزين "ملفات سجلات الخادم" (server log files) التي تُحفظ لمراقبة أداء تطبيقات الويب. ❌</p>
+            <p><mark> <b>٢. يُستخدم لتخزين ملفات مثل "الصور" (images) و"الخطوط" (fonts) و"الموارد الأخرى" (other resources) .</b> ✅</mark></p>
+            <p> ٣. يُستخدم لتخزين "النصوص البرمجية" (scripts) والأدوات اللازمة لاختبار تطبيق الويب. ❌</p>
+			<p> ٤. يُستخدم لاحتواء "المكتبات" (libraries) و"أطر العمل" (frameworks) الخاصة بأطراف خارجية. ❌</p>
+
+            <br>
+
+            <h5>ما هو الاستخدام الشائع لملف <code dir="ltr" class="br-spec">README.md</code> في المشروع؟</h5>
+			
+			<p> ١. يُستخدم لتخزين المعلومات والبيانات الشخصية التي يتم جمعها من المستخدمين. ❌</p>
+            <p> ٢. يُستخدم لتحديد هيكلية ومخطط قاعدة بيانات المشروع. ❌</p>
+            <p><mark> <b>٣. يُستخدم لتوفير معلومات مفيدة حول المشروع.</b> ✅</mark></p>
+			<p> ٤. يُستخدم لتتبع وتوثيق المشكلات والأخطاء البرمجية المكتشفة في المشروع. ❌</p>
+
+            <br>
+
+            <h5>ماذا يُمثِّل "الدليل الجذري" (The root directory) في "نظام الملفات" (File system) ؟</h5>
+
+			<p> ١. يمثل هذا المجلد الافتراضي لحفظ الملفات التي تم تنزيلها. ❌</p>
+			<p> ٢. يحتوي على الملفات والبيانات المخزنة مؤقتًا لتسريع عمليات النظام. ❌</p>
+			<p> ٣. يحتوي على سجلات ومعلومات تشخيصية حول أداء النظام. ❌</p>
+            <p><mark> <b>٤. نقطة البداية لجميع "مسارات الملفات" (file paths) , ويحتوي على جميع المجلدات والملفات الأخرى الموجودة بداخله.</b> ✅</mark></p>
+		</div>
+
 	</section>
 
 	<section id="4">
