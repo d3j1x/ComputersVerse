@@ -12,6 +12,7 @@ body {
   font-optical-sizing: auto;
   font-style: normal;
   background-color: #007a3f;
+  font-weight: 500;
 
 }
 
@@ -43,7 +44,7 @@ main {
 .navbar {
   background-color:  white;
   margin-top: 5vh;
-  border: #7c3aed 2px solid;
+  border: darkgreen 2px solid;
   border-radius: 4px;
   box-shadow: 0 1px 2px white;
 }
@@ -75,7 +76,7 @@ main {
 
 .navbar .nav-links .second-links li a {
   text-decoration: none;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 700;
   color: black;
 }
@@ -105,7 +106,8 @@ footer {
 }
 
 .box {
-  background-color: #e6eef6;
+  /* background-color: #e6eef6; */
+  background-color: whitesmoke;
   padding: 20px;
   margin-top: 5vh;
   margin-bottom: 20px;
@@ -505,7 +507,7 @@ form {
 }
 
 .hinty {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .userstory {
