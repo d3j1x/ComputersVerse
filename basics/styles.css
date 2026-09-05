@@ -28,25 +28,23 @@ header .black {
 
 header h1 {
   text-align: center;
-  color:#e6eef6;
+  color:white;
 }
 
 main {
   display: block;
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 0 auto; /* centers horizontally */
 }
 
-.presentation-main {
 
-}
 
 .navbar {
   background-color:  white;
   margin-top: 5vh;
-  border: darkgreen 2px solid;
+  border: green 2px solid;
   border-radius: 4px;
-  box-shadow: 0 1px 2px white;
+  box-shadow: 0 1px 2px darkgreen;
 }
 
 .navbar .nav-links {
