@@ -1,0 +1,16 @@
+{
+  "name": "ComputersVerse",
+  "short_name": "ComputersVerse",
+  "description": "منصة مجانية ومفتوحة المصدر لتعلم الحواسيب باللغة العربية.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0d6efd",
+  "icons": [
+    {
+      "src": "/assets/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
